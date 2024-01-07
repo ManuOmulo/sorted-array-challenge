@@ -6,10 +6,10 @@ public class SortedArray {
   public static int[] getIntegers(int size) {
     int counter = 0;
     int[] intArray = new int[size];
+    Scanner sc = new Scanner(System.in);
+    System.out.printf("Enter %d numbers: %n", size);
 
     while (counter < size) {
-      Scanner sc = new Scanner(System.in);
-      System.out.printf("Enter %d numbers: %n", size);
       String input = sc.nextLine();
       int number = Integer.parseInt(input);
       intArray[counter] = number;
